@@ -1,0 +1,33 @@
+{
+    "name": "@docusaurus/theme-utils",
+    "version": "2.0.0-alpha.64",
+    "description": "Docusaurus theme utilitaries",
+    "main": "src/index.js",
+    "types": "src/types.d.ts",
+    "license": "MIT",
+    "publishConfig": {
+      "access": "public"
+    },
+    "dependencies": {
+      "@docusaurus/core": "2.0.0-alpha.64",
+      "@docusaurus/types": "2.0.0-alpha.64",
+      "@docusaurus/plugin-content-blog": "2.0.0-alpha.64",
+      "@docusaurus/plugin-content-docs": "2.0.0-alpha.64",
+      "@docusaurus/plugin-content-pages": "2.0.0-alpha.64"
+    },
+    "devDependencies": {
+      "@docusaurus/module-type-aliases": "2.0.0-alpha.64"
+    },
+    "scripts": {
+      "build": "tsc --noEmit && yarn babel && yarn prettier",
+      "babel": "babel src -d lib --extensions \".tsx,.ts\" --ignore \"**/*.d.ts\" --copy-files",
+      "prettier": "prettier --config ../../.prettierrc --write \"**/*.{js,ts}\""
+    },
+    "peerDependencies": {
+      "react": "^16.8.4",
+      "react-dom": "^16.8.4"
+    },
+    "engines": {
+      "node": ">=10.15.1"
+    }
+  }
