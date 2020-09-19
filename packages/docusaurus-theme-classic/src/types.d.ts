@@ -270,14 +270,6 @@ declare module '@theme/UserPreferencesProvider' {
   export default UserPreferencesProvider;
 }
 
-declare module '@theme/ThemeContext' {
-  import type {Context} from 'react';
-  import type {ThemeContextProps} from '@theme/hooks/useThemeContext';
-
-  const ThemeContext: Context<ThemeContextProps | undefined>;
-  export default ThemeContext;
-}
-
 declare module '@theme/UserPreferencesContext' {
   import type {Context} from 'react';
   import type {UserPreferencesContextProps} from '@theme/hooks/useUserPreferencesContext';

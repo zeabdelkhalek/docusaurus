@@ -11,6 +11,7 @@
 /// <reference types="@docusaurus/plugin-content-blog" />
 /// <reference types="@docusaurus/plugin-content-docs" />
 /// <reference types="@docusaurus/plugin-content-pages" />
+/// <reference types="@docusaurus/theme-utils" />
 
 declare module '@theme/BlogListPaginator' {
   import type {Metadata} from '@theme/BlogListPage';

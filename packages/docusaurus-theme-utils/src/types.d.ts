@@ -108,6 +108,14 @@ declare module '@theme/hooks/useThemeContext' {
   export default function useThemeContext(): ThemeContextProps;
 }
 
+declare module '@theme/ThemeContext' {
+  import type {Context} from 'react';
+  import type {ThemeContextProps} from '@theme/hooks/useThemeContext';
+
+  const ThemeContext: Context<ThemeContextProps | undefined>;
+  export default ThemeContext;
+}
+
 declare module '@theme/hooks/useTOCHighlight' {
   export default function useTOCHighlight(
     linkClassName: string,
