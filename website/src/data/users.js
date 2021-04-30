@@ -456,6 +456,14 @@ const Users = [
     tags: ['opensource','product'],
   },
   {
+    title: 'Kosko',
+    description: 'Organize Kubernetes manifests in JavaScript',
+    preview: require('./showcase/kosko.png'),
+    website: 'https://kosko.dev',
+    source: 'https://github.com/tommy351/kosko',
+    tags: ['opensource']
+  },
+  {
     title: 'Kotest',
     description: 'Kotlin test framework',
     preview: require('./showcase/kotest.jpg'),
@@ -477,6 +485,14 @@ const Users = [
     preview: require('./showcase/mailgo.png'),
     website: 'https://mailgo.dev/',
     source: 'https://github.com/manzinello/mailgo.dev',
+    tags: ['opensource'],
+  },
+  {
+    title: 'Meli',
+    description: 'Platform to deploy static sites, frontend applications and hosted forms',
+    preview: require('./showcase/meli.png'),
+    website: 'https://docs.meli.sh/',
+    source: 'https://github.com/getmeli/meli',
     tags: ['opensource'],
   },
   {
